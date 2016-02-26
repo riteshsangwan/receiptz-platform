@@ -1,0 +1,30 @@
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+.vspacer40 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.vspacer20 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.grid-header {
+  background: #eeeeee;
+  border: 1px solid #cacaca;
+}
+/* navbar */
+.home-navbar {
+  margin-top: 50px;
+  border: none;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 0;
+}
+/* landing page */
+.grey-background {
+  background: #e6e6e6;
+}
+.home-content {
+
+}
