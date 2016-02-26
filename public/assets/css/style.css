@@ -1,3 +1,14 @@
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.full-height {
+  height: 100%;
+}
+.overflow-hidden {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 .col-centered {
   float: none;
   margin: 0 auto;
@@ -26,5 +37,67 @@
   background: #e6e6e6;
 }
 .home-content {
-
+  margin-top: 60px;
+}
+.no-margin {
+  margin: 0;
+}
+.home-content .top-heading {
+  font-size: 28px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+.home-content .middle-heading {
+  font-size: 24px;
+  font-weight: 200;
+  color: #888888;
+}
+.home-content .bottom-heading {
+  font-size: 28px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+.home-content .bottom-text {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 200;
+}
+.home-content .light-font {
+  font-size: 18px;
+  font-weight: 200;
+}
+.home-content .login-wrapper {
+  background: #ffffff;
+  max-width: 400px;
+}
+.home-content .login-wrapper .form-title {
+  font-size: 30px;
+  font-weight: 100;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.home-content .login-wrapper .col-sm-10 {
+  margin-left: 20px;
+}
+.home-content .login-wrapper .input-box {
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #5f5f5f;
+  width: 350px;
+  padding: 0;
+  outline: 0;
+}
+.home-content .login-wrapper .sign-in-button {
+  border-radius: 0;
+  width: 100px;
+}
+.home-content .login-wrapper .form-horizontal {
+  margin-bottom: 30px;
+}
+.home-content .login-wrapper .no-account {
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
