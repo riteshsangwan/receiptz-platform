@@ -1,0 +1,122 @@
+<nav class="navbar navbar-default home-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#home-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">ReceiptZ</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="home-navbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#/aboutus">About Us</a>
+                </li>
+                <li>
+                    <a href="#/aboutus">How it works</a>
+                </li>
+                <li>
+                    <a href="#/aboutus">API</a>
+                </li>
+                <li>
+                    <a href="#/aboutus">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid register">
+    <div class="row">
+        <div class="col col-md-8 col-lg-8 col-centered">
+            <div class="row">
+                <div class="col col-md-12 col-lg-12 no-padding-left-right">
+                    <p class="register-heading">RETAILER SIGN UP</p>
+                </div>
+            </div>
+            <div class="row register-wrapper">
+                <div class="col col-md-6 col-lg-6">
+                    <p class="text-center create-heading">Create Organization</p>
+                    <p class="no-margin text-center">Hello there, thank you for choosing receiptz. On</p>
+                    <p class="no-margin text-center">behalf of our entire team we welcome you</p>
+                    <p class="no-margin text-center margin-bottom-10">onboard.</p>
+                    <p class="no-margin text-center">Once you have completed your sign up, we</p>
+                    <p class="no-margin text-center">will be sending you welcome email to the</p>
+                    <p class="no-margin text-center">contact email you have provided in the sign</p>
+                    <p class="no-margin text-center">up form. Please make sure you complete the</p>
+                    <p class="no-margin text-center margin-bottom-10">verification process to start your receiptz service.</p>
+                </div>
+                <div class="col col-md-6 col-lg-6">
+                    <form novalidate name="registerForm">
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control input-box" id="firstName" placeholder="First Name" ng-model="organization.firstName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" ng-model="organization.lastName" class="form-control input-box" id="lastName" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="email" ng-model="organization.email" class="form-control input-box" id="email" placeholder="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="password" ng-model="organization.password" class="form-control input-box" id="password" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" ng-model="organization.country.name" class="form-control input-box" id="country" placeholder="Country" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" ng-model="organization.mobileNumber" class="form-control input-box" id="mobileNumber" placeholder="Mobile Number" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" ng-model="organization.name" class="form-control input-box" id="mobileNumber" placeholder="Organization name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" ng-model="organization.streetAddress" class="form-control input-box" id="mobileNumber" placeholder="Street Address" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" ng-model="organization.city" class="form-control input-box" id="mobileNumber" placeholder="City" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" ng-model="organization.state" class="form-control input-box" id="mobileNumber" placeholder="State" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="number" ng-model="organization.tax" class="form-control input-box" id="mobileNumber" placeholder="tax" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <input type="text" ng-model="organization.zipCode" class="form-control input-box" id="mobileNumber" placeholder="Zipcode" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <button type="submit" ng-disabled="registerForm.$invalid" ng-click="register(organization)" class="btn btn-default long-button">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,7 +3,7 @@
 /**
  * This is the main file. This will bootstrapped the HQ angular app and will do the required configurations
  */
-var app = angular.module('receiptzApp', ['ui.bootstrap', 'ui.router', 'receiptzApp.controllers', 'receiptzApp.services']);
+var app = angular.module('receiptzApp', ['ui.bootstrap', 'ui.router', 'receiptzApp.controllers', 'receiptzApp.services', 'cgNotify']);
 
 /**
  * App configurations goes here
@@ -21,7 +21,22 @@ app.config(['$stateProvider', '$urlRouterProvider','$locationProvider', '$compil
     .state('home', {
       url: '/home',
       templateUrl: 'partials/home.html',
+      resolve: {
+        dashboard: function(OrganizationService) {
+          return OrganizationService.getDashboard();
+        }
+      },
       controller: 'HomeController'
+    })
+    .state('sale', {
+      url: '/sales',
+      templateUrl: 'partials/sales.html',
+      resolve: {
+        items: function(OrganizationService) {
+          return OrganizationService.getItems();
+        }
+      },
+      controller: 'SaleController'
     })
     // this registration is only for business owners
     .state('register', {
@@ -34,9 +49,11 @@ app.config(['$stateProvider', '$urlRouterProvider','$locationProvider', '$compil
 app.run(['$rootScope', '$state', 'UserService', function($rootScope, $state, UserService) {
 
   // check if the user is authenticated
-  UserService.me().then(function() {
+  UserService.check().then(function() {
     // if the user is logged in go to home state
     $state.go('home');
+  }, function(reason) {
+    $state.go('landing');
   });
 
   $rootScope.logout = function() {

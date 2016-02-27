@@ -12,6 +12,7 @@ var express = require('express'),
   ErrorHandler = require('./middlewares/ErrorHandler'),
   Responser = require('./middlewares/Responser'),
   responseTransformer = require('./middlewares/ResponseTransformer'),
+  session = require('express-session'),
   app = express();
 
 var errorHandler = new ErrorHandler();
@@ -23,6 +24,12 @@ var router = require('./router'),
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+app.use(session({
+  secret: config.SESSION_SECRET || 'localtesting',
+  saveUninitialized: true,
+  resave: true
+}));
 
 var bodyParser = require('body-parser');
 // only use bodyParser for json and urlencoded

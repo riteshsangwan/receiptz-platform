@@ -1,4 +1,5 @@
 {
     "NAME": "receiptz",
+    "API_BASE_URL": "https://receiptz-api.herokuapp.com",
     "WEB_SERVER_PORT": 3300
 }

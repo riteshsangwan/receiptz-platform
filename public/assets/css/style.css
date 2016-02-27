@@ -1,9 +1,11 @@
 html, body {
   height: 100%;
-  overflow: hidden;
 }
 .full-height {
   height: 100%;
+}
+.margin-top-40 {
+  margin-top: 40px;
 }
 .overflow-hidden {
   overflow-y: hidden;
@@ -27,7 +29,6 @@ html, body {
 }
 /* navbar */
 .home-navbar {
-  margin-top: 50px;
   border: none;
   border-top: 1px solid #eeeeee;
   margin-bottom: 0;
@@ -79,7 +80,7 @@ html, body {
 .home-content .login-wrapper .col-sm-10 {
   margin-left: 20px;
 }
-.home-content .login-wrapper .input-box {
+.input-box {
   border-radius: 0;
   border: none;
   -webkit-box-shadow: none !important;
@@ -90,7 +91,7 @@ html, body {
   padding: 0;
   outline: 0;
 }
-.home-content .login-wrapper .sign-in-button {
+.long-button {
   border-radius: 0;
   width: 100px;
 }
@@ -100,4 +101,77 @@ html, body {
 .home-content .login-wrapper .no-account {
   margin-left: 20px;
   margin-bottom: 30px;
+}
+
+/* register */
+.register .row .col-centered {
+  margin-top: 10px;
+}
+.no-padding-left-right {
+  padding-left: 0;
+  padding-right: 0;
+}
+.register .register-heading {
+  font-weight: 200;
+  font-size: 26px;
+  color: #333333;
+}
+.register .create-heading {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 20px !important;
+}
+.register-wrapper .no-margin {
+  font-size: 16px;
+}
+.register .register-wrapper {
+  border: 1px solid #e6e6e6;
+}
+.register .margin-bottom-10 {
+  margin-bottom: 10px;
+}
+.register .long-button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.item-thumbnail {
+  max-width: 120px;
+  max-height: 120px;
+}
+/* dashboard */
+.light-grey-background {
+  background: #e6e6e6;
+}
+.dashboard-panel {
+  max-width: 380px;
+  max-height: 350px;
+  margin: 0 auto;
+  background: #ffffff;
+  color: #333;
+}
+.dashboard-panel > .very-small {
+  font-size: 12px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+.dashboard-panel > .small {
+  font-size: 12px;
+  margin-right: 10px;
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+.dashboard-panel > .big {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+.dashboard-panel > .big > span {
+  font-size: 40px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.dashboard .row {
+  margin-bottom: 20px;
+}
+.dashboard-chart {
+  min-height: 300px;
 }

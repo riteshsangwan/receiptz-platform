@@ -24,7 +24,9 @@ module.exports = function() {
   // users
   // only retailer login
   router.post('/users/login', proxy.login);
+  router.post('/logout', proxy.logout);
   router.get('/me', auth.middleware, proxy.me);
+  router.get('/check', auth.middleware, proxy.check);
 
   // receipts
   router.post('/receipts', auth.middleware, proxy.createReceipt);
@@ -34,7 +36,8 @@ module.exports = function() {
   router.post('/organizations', proxy.createOrganization);
 
   // show list of items to make a sale transaction
-  router.get('/organizations/:id/items', auth.middleware, proxy.getItems);
+  router.get('/organizations/items', auth.middleware, proxy.getItems);
+  router.get('/organizations/dashboard', auth.middleware, proxy.getDashboard);
 
   return router;
 };

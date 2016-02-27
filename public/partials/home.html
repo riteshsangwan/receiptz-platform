@@ -1,0 +1,77 @@
+<nav class="navbar navbar-default home-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#home-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">ReceiptZ</a>
+        </div>
+        <div class="collapse navbar-collapse" id="home-navbar">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#/home">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#/sales">Sale</a>
+                </li>
+            </ul>
+            <button type="button" class="btn navbar-btn btn-default navbar-right" ng-click="logout()">Logout</button>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid light-grey-background full-height">
+    <div class="row">
+        <div class="col col-md-9 col-centered dashboard">
+            <div class="row">
+                <div class="col col-md-12 col-lg-12">
+                    <div dc-chart="barChart" dc-width="780"
+                        dc-height="300" dc-margins="{top: 5, right: 50, bottom: 20, left: 40}"
+                        dc-x="volumeScale"
+                        dc-x-units="d3.time.months"
+                        dc-dimension="salesVolumeDim"
+                        dc-group="salesVolumeGroup"
+                        dc-label = false
+                        class="dc-chart"
+                        dc-gap="1"
+                        dc-ordinal-colors="['#339380']"
+                        dc-centerBar="true"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-6 col-lg-6">
+                    <div class="dashboard-panel">
+                        <p class="text-right small">Current Month <i class="glyphicon glyphicon-triangle-bottom"></i></p>
+                        <p class="text-center big"><span class="strong">8.14</span> bills/hr</p>
+                        <p class="text-center very-small"><i class="glyphicon glyphicon-triangle-top"></i> 12% from previous month</p>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-6">
+                    <div class="dashboard-panel">
+                        <p class="text-right small">Current Month <i class="glyphicon glyphicon-triangle-bottom"></i></p>
+                        <p class="text-center big"><span class="strong">24</span> new customers</p>
+                        <p class="text-center very-small"><i class="glyphicon glyphicon-triangle-top"></i> 2.5% from previous month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-6 col-lg-6">
+                    <div class="dashboard-panel">
+                        <p class="text-right small">Current Month <i class="glyphicon glyphicon-triangle-bottom"></i></p>
+                        <p class="text-center big"><span class="strong">638.56</span> avg/bill</p>
+                        <p class="text-center very-small"><i class="glyphicon glyphicon-triangle-top"></i> 1.05% from previous month</p>
+                    </div>
+                </div>
+                <div class="col col-md-6 col-lg-6">
+                    <div class="dashboard-panel">
+                        <p class="text-right small">Current Month <i class="glyphicon glyphicon-triangle-bottom"></i></p>
+                        <p class="text-center big"><span class="strong">47%</span> repeat customers</p>
+                        <p class="text-center very-small"><i class="glyphicon glyphicon-triangle-top"></i> 8% from previous month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

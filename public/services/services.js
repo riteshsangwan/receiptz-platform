@@ -14,10 +14,64 @@ appServices.factory('UserService', ['$q', '$http', 'RequestHelper', function($q,
     });
   };
 
+  service.check = function() {
+    return RequestHelper.execute({
+      url: '/check'
+    });
+  };
+
   service.logout = function() {
     return RequestHelper.execute({
       url: '/logout',
       method: 'POST'
+    });
+  };
+
+  service.registerOrganization = function(organization) {
+    return RequestHelper.execute({
+      url: '/organizations',
+      method: 'POST',
+      data: organization
+    });
+  };
+
+  service.login = function(credentials) {
+    return RequestHelper.execute({
+      url: '/users/login',
+      method: 'POST',
+      data: credentials
+    });
+  };
+
+  return service;
+}]);
+
+appServices.factory('OrganizationService', ['$http', '$q', 'RequestHelper', function($http, $q, RequestHelper) {
+  var service = {};
+
+  service.getItems = function() {
+    return RequestHelper.execute({
+      url: '/organizations/items'
+    });
+  };
+
+  service.getDashboard = function() {
+    return RequestHelper.execute({
+      url: '/organizations/dashboard'
+    });
+  };
+
+  return service;
+}]);
+
+appServices.factory('ReceiptService', ['RequestHelper', function(RequestHelper) {
+  var service = {};
+
+  service.create = function(entity) {
+    return RequestHelper.execute({
+      url: '/receipts',
+      method: 'POST',
+      data: entity
     });
   };
 
