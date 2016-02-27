@@ -3,7 +3,7 @@
 /**
  * This is the main file. This will bootstrapped the HQ angular app and will do the required configurations
  */
-var app = angular.module('receiptzApp', ['ui.bootstrap', 'ui.router', 'receiptzApp.controllers', 'receiptzApp.services', 'cgNotify']);
+var app = angular.module('receiptzApp', ['ui.bootstrap', 'ui.router', 'receiptzApp.controllers', 'receiptzApp.services', 'cgNotify', 'angularDc']);
 
 /**
  * App configurations goes here

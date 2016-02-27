@@ -10,9 +10,10 @@
     "angular-touch": "1.4.0",
     "angular-notify": "^2.5.0",
     "moment": "~2.10.1",
-    "lodash": "2.4.2"
+    "lodash": "~3.10.1"
   },
   "resolutions": {
-    "angular": "1.4.0"
+    "angular": "1.4.0",
+    "lodash": "~3.10.1"
   }
 }
