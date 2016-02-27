@@ -17,6 +17,7 @@ var errors = require('common-errors');
 var httpStatus = require('http-status');
 var _ = require('lodash');
 var dashboard = require('./dashboard.json');
+var items = require('./items.json');
 
 var _callProxy = function(options, callback) {
   caller(options, function(error, response, body) {
@@ -180,24 +181,11 @@ exports.createOrganization = function(req, res, next) {
  * @param  {Function}   next        next function
  */
 exports.getItems = function(req, res, next) {
-  var options = {
-    url: '/organizations/items',
-    method: 'GET',
-    headers: {
-      'Authorization': 'Bearer ' + req.session.user.token
-    }
+  req.data = {
+    statusCode: httpStatus.OK,
+    content: items
   };
-  _callProxy(options, function(err, response) {
-    if(err) {
-      return next(err);
-    } else {
-      req.data = {
-        statusCode: httpStatus.OK,
-        content: response
-      };
-      next();
-    }
-  });
+  next();
 };
 
 /**

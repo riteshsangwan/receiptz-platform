@@ -48,12 +48,13 @@ appControllers.controller('HomeController', ['$scope', 'dashboard', function($sc
   $scope.salesVolumeGroup = $scope.salesVolumeDim.group().reduceSum(function(t) {
     return 1;
   });
+
   $scope.volumeScale = d3.time.scale().domain($scope.getDateRange());
 }]);
 
 // Sale controller
 appControllers.controller('SaleController', ['$scope', 'items', '$uibModal', 'notify', 'ReceiptService', function($scope, items, $uibModal, notify, ReceiptService) {
-  $scope.items = JSON.parse(items);
+  $scope.items = items;
   $scope.total = 0.00;
   $scope.taxPercentage = 12.36;
   $scope.taxes = 0.00;

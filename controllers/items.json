@@ -1,0 +1,163 @@
+[{
+    "itemCode": "1PP",
+    "itemName": "LeadedPetrol",
+    "pricePerUnit": "80",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "2PP",
+    "itemName": "UnleadedPetrol",
+    "pricePerUnit": "90",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "3PP",
+    "itemName": "XtraMilegePetrol",
+    "pricePerUnit": "100",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "4PP",
+    "itemName": "SpeedPetrol",
+    "pricePerUnit": "105",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "5PP",
+    "itemName": "PerformancePetrol",
+    "pricePerUnit": "110",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "6PP",
+    "itemName": "LeadedDiesel",
+    "pricePerUnit": "50",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "7PP",
+    "itemName": "UnleadedDiesel",
+    "pricePerUnit": "60",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "8PP",
+    "itemName": "XtraMilegeDiesel",
+    "pricePerUnit": "65",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "9PP",
+    "itemName": "SpeedDiesel",
+    "pricePerUnit": "70",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "10PP",
+    "itemName": "XtraPerformanceDiesel",
+    "pricePerUnit": "80",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "11PP",
+    "itemName": "CNG",
+    "pricePerUnit": "40",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "12PP",
+    "itemName": "LPG",
+    "pricePerUnit": "50",
+    "category": "fuel",
+    "url": "http://il2.picdn.net/shutterstock/videos/1231831/thumb/1.jpg?i10c=img.resize"
+}, {
+    "itemCode": "1GS",
+    "itemName": "Pulses",
+    "pricePerUnit": "100",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "2GS",
+    "itemName": "Flour",
+    "pricePerUnit": "300",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "3GS",
+    "itemName": "Sugar",
+    "pricePerUnit": "40",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "4GS",
+    "itemName": "EdibleOil",
+    "pricePerUnit": "100",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "5GS",
+    "itemName": "Shampoo",
+    "pricePerUnit": "200",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "6GS",
+    "itemName": "Soap",
+    "pricePerUnit": "50",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "7GS",
+    "itemName": "Toothpaste",
+    "pricePerUnit": "80",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "8GS",
+    "itemName": "Toothbrush",
+    "pricePerUnit": "30",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "9GS",
+    "itemName": "Deodrant",
+    "pricePerUnit": "180",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "10GS",
+    "itemName": "HairOil",
+    "pricePerUnit": "70",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "11GS",
+    "itemName": "Jam",
+    "pricePerUnit": "120",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "12GS",
+    "itemName": "Bread",
+    "pricePerUnit": "30",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "13GS",
+    "itemName": "Biscuits",
+    "pricePerUnit": "20",
+    "category": "",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "14GS",
+    "itemName": "Spices",
+    "pricePerUnit": "50",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}, {
+    "itemCode": "15GS",
+    "itemName": "Salt",
+    "pricePerUnit": "20",
+    "category": "food",
+    "url": "http://www.thehindu.com/multimedia/dynamic/02332/zzpassport_jpg__ss_2332229g.jpg"
+}]
